@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #29303b;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 10;
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #d1d7e0;
+  font-size: 1.5rem;
+  transition: all;
+}
+
+.navbar ul li a:hover {
+  color: #802bb1;
+  cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.aboutSection {
+  min-height: 100vh;
+  background: #343f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  height: 200px;
+  width: auto;
+  border-radius: 100px;
+  border-bottom: #802bb1 solid 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  gap: 50px;
+  background-color: #29303b;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+  color: #802bb1;
+}
+p {
+  color: #d1d7e0;
+  text-align: center;
+}
+
+.text-shpere {
+  position: relative;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+  color: #d1d7e0;
+  cursor: default;
+}
+
+.tagcloud--item:hover {
+  color: #802bb1;
+}
