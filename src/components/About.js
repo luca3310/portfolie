@@ -35,7 +35,7 @@ const About = () => {
       <div className="aboutContainer">
         <div className="col">
           <h1>About</h1>
-          <img className="image" src="images/image.jpg" />
+          <img className="image" src="images/image.jpg" alt="selfimage" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque odio velit, congue sagittis commodo et, dapibus

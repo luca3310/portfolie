@@ -5,16 +5,16 @@ const Navbar = function () {
     <div className="navbar">
       <ul>
         <li>
-          <a>Hero</a>
+          <a href="https://www.google.dk/">Hero</a>
         </li>
         <li>
-          <a>About</a>
+          <a href="https://www.google.dk/">About</a>
         </li>
         <li>
-          <a>Projects</a>
+          <a href="https://www.google.dk/">Projects</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a href="https://www.google.dk/">Contact</a>
         </li>
       </ul>
     </div>
