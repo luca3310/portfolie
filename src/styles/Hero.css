@@ -1,10 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 .heroSection {
   display: flex;
   flex-direction: column;
@@ -12,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   background: #343f4f;
+  overflow: hidden;
 }
 
 .heroContainer {
@@ -25,6 +19,7 @@
 .wrapper {
   display: flex;
 }
+
 .name {
   color: #d1d7e0;
   font-size: 80px;
@@ -84,5 +79,23 @@
   }
   100% {
     left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .name {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 30px;
   }
 }

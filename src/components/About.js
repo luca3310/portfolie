@@ -1,6 +1,7 @@
 import "../styles/About.css";
 import React, { useEffect } from "react";
 import TagCloud from "TagCloud";
+import Card from "./Card";
 
 const About = () => {
   useEffect(() => {
@@ -46,6 +47,12 @@ const About = () => {
           <span className="tagcloud"></span>
         </div>
       </div>
+      <section className="card-list">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </section>
     </section>
   );
 };

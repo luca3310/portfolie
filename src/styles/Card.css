@@ -1,0 +1,95 @@
+.card {
+  /* ... */
+  color: white;
+  border-radius: 16px;
+  background: #29303b;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card-author {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.author-avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 16px 10px;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #802bb1;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.card-header {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  gap: 20px;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: #d1d7e0;
+  text-align: left;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  color: #802bb1;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .card-header p {
+    font-size: 10px;
+  }
+
+  .card-header h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    display: none;
+  }
+}
