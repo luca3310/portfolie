@@ -1,21 +1,21 @@
 import "../styles/Project.css";
 
-function Project() {
+function Project(prompt) {
   return (
     <div className="project">
       <div className="imgbx">
-        <img src="/images/image.jpg" />
+        <img src="/images/image.jpg" alt="projectImage" />
       </div>
       <div className="content">
         <div className="details">
-          <h1>Project1</h1>
+          <h1>{prompt.titel}</h1>
           <ul>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
+            {prompt.ider.map((ider, index) => {
+              return <li key={index}>{ider}</li>;
+            })}
           </ul>
           <p>
-            this is a project about frontend devolopment <a>visit here</a>
+            {prompt.tekst} <a href="https://www.google.dk/">visit here</a>
           </p>
         </div>
       </div>

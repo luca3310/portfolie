@@ -16,8 +16,6 @@ const About = () => {
         "ES6",
         "GIT",
         "Github",
-        "NextJS",
-        "Firebase",
       ];
 
       const options = {
@@ -48,10 +46,30 @@ const About = () => {
         </div>
       </div>
       <section className="card-list">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          titel="Never forget"
+          tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          billede="images/image.jpg"
+        />
+        <Card
+          titel="Never forget"
+          tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          billede="images/image.jpg"
+        />
+        <Card
+          titel="Never forget"
+          tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          billede="images/image.jpg"
+        />
+        <Card
+          titel="Never forget"
+          tekst="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          billede="images/image.jpg"
+        />
       </section>
     </section>
   );

@@ -6,10 +6,26 @@ function Projects() {
     <section className="projectsSection">
       <h1>Projects</h1>
       <div className="projectsContainer">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project
+          tekst="det her er en lang tekst"
+          titel="project1"
+          ider={["JavaScript", "css", "html"]}
+        />
+        <Project
+          tekst="det her er en lang tekst"
+          titel="project1"
+          ider={["JavaScript", "css", "html"]}
+        />
+        <Project
+          tekst="det her er en lang tekst"
+          titel="project1"
+          ider={["JavaScript", "css", "html"]}
+        />
+        <Project
+          tekst="det her er en lang tekst"
+          titel="project1"
+          ider={["JavaScript", "css", "html"]}
+        />
       </div>
     </section>
   );
