@@ -39,7 +39,7 @@ function Kontankt() {
             </svg>
             Lucas@thoras.dk
           </li>
-          <a href="https://icons.getbootstrap.com/icons/telephone/">
+          <a rel="noreferrer" target="_blank" href="https://github.com/luca3310">
             <li className="link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ function Kontankt() {
               Github
             </li>
           </a>
-          <a href="https://icons.getbootstrap.com/icons/telephone/">
+          <a rel="noreferrer" target="_blank" href="https://icons.getbootstrap.com/icons/telephone/">
             <li className="link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
