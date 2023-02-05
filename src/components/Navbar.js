@@ -1,22 +1,24 @@
 import "../styles/Navbar.css";
+import BurgerMenu from "./BurgerMenu";
 
 const Navbar = function () {
   return (
     <div className="navbar">
-      <ul>
+      <ul className="navbarDesktop">
         <li>
-          <a href="https://www.google.dk/">Hero</a>
+          <a href="#heroSection">Hero</a>
         </li>
         <li>
-          <a href="https://www.google.dk/">About</a>
+          <a href="#aboutSection">About</a>
         </li>
         <li>
-          <a href="https://www.google.dk/">Projects</a>
+          <a href="#projectsSection">Projects</a>
         </li>
         <li>
-          <a href="https://www.google.dk/">Contact</a>
+          <a href="#kontaktSection">Contact</a>
         </li>
       </ul>
+      <BurgerMenu />
     </div>
   );
 };

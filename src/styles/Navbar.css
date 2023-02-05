@@ -11,24 +11,34 @@
   z-index: 10;
 }
 
-.navbar ul {
+.navbarDesktop {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.navbar ul li {
+.navbarDesktop li {
   list-style: none;
 }
 
-.navbar ul li a {
+.navbarDesktop li a {
   color: #d1d7e0;
   font-size: 1.5rem;
   transition: all;
   text-decoration: none;
+  transition: 0.5s;
 }
 
-.navbar ul li a:hover {
+.navbarDesktop li a:hover {
   color: #802bb1;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navbarDesktop {
+    display: none;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
 }

@@ -3,28 +3,35 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <section className="projectsSection">
-      <h1>Projects</h1>
+    <section id="projectsSection" className="projectsSection">
       <div className="projectsContainer">
         <Project
-          tekst="det her er en lang tekst"
-          titel="project1"
-          ider={["JavaScript", "css", "html"]}
+          tekst="en hjemmeside der vil anbefale en aktie ved hjælp af en API"
+          titel="Aktie Hjemmeside"
+          ider={["html", "css", "JavaScript"]}
+          link="https://deluxe-youtiao-1c74e9.netlify.app"
+          billede="images/aktieHjemmeside.PNG"
         />
         <Project
-          tekst="det her er en lang tekst"
-          titel="project1"
-          ider={["JavaScript", "css", "html"]}
+          tekst="en hjemmeside af en kaffe cafe"
+          titel="kaffe hjemmeside"
+          ider={["react", "tailwind", "html"]}
+          billede="images/kaffeHjemmeside.PNG"
+          link="https://steady-lamington-946951.netlify.app"
         />
         <Project
-          tekst="det her er en lang tekst"
-          titel="project1"
+          tekst="en hjemmeside der lader dig skrive noter, færdiggøre dem og slette dem"
+          titel="note hjemmeside"
           ider={["JavaScript", "css", "html"]}
+          billede="images/noteHjemmeside.PNG"
+          link="https://fancy-elf-e951fc.netlify.app"
         />
         <Project
-          tekst="det her er en lang tekst"
-          titel="project1"
-          ider={["JavaScript", "css", "html"]}
+          tekst="en hjemmeside af et flyselskab"
+          titel="flyselskab hjemmeside"
+          ider={["react", "tailwind", "html"]}
+          billede="images/rejseHjemmeside.PNG"
+          link="https://playful-liger-dc705c.netlify.app"
         />
       </div>
     </section>

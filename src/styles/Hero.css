@@ -8,12 +8,28 @@
   overflow: hidden;
 }
 
+.heroSection .links {
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.heroSection .links svg {
+  transition: 0.5s;
+}
+
+.heroSection .links svg:hover {
+  fill: #802bb1;
+}
+
 .heroContainer {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  opacity: 0;
+  transition: 2s;
 }
 
 .wrapper {
@@ -147,5 +163,4 @@
   }
 }
 @media (max-width: 450px) {
-  
- }
+}

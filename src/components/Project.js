@@ -1,10 +1,13 @@
 import "../styles/Project.css";
-
+import { useInView } from "react-intersection-observer";
 function Project(prompt) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView({
+    threshold: 1,
+  });
   return (
-    <div className="project">
+    <div ref={myRef} className={`project ${myElementIsVisible ? "show" : ""}`}>
       <div className="imgbx">
-        <img src="/images/image.jpg" alt="projectImage" />
+        <img src={prompt.billede} alt="projectImage" />
       </div>
       <div className="content">
         <div className="details">
@@ -15,7 +18,7 @@ function Project(prompt) {
             })}
           </ul>
           <p>
-            {prompt.tekst} <a href="https://www.google.dk/">visit here</a>
+            {prompt.tekst} <a href={prompt.link}>besøg her</a>
           </p>
         </div>
       </div>
