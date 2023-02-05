@@ -1,31 +1,29 @@
 import React, { useEffect } from "react";
 import "../styles/TextShpere.css";
+import { useInView } from "react-intersection-observer";
 
 // Importing TagCloud package
 import TagCloud from "TagCloud";
 
 const TextShpere = () => {
+  const { ref: myRef, inView: myElementIsVisible } = useInView({
+    threshold: 0.5,
+  });
   // Animation settings for Text Cloud
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
       "HTML",
       "CSS",
-      "SASS",
       "JavaScript",
       "React",
-      "Vue",
-      "Nuxt",
-      "NodeJS",
-      "Shopify",
-      "Jquery",
       "ES6",
       "GIT",
       "GITHUB",
     ];
 
     const options = {
-      radius: 300,
+      radius: 250,
       maxSpeed: "normal",
       initSpeed: "normal",
       keep: true,
@@ -36,7 +34,10 @@ const TextShpere = () => {
 
   return (
     <>
-      <div className="text-shpere">
+      <div
+        ref={myRef}
+        className={`text-shpere ${myElementIsVisible ? "show" : ""}`}
+      >
         {/* span tag className must be "tagcloud"  */}
         <span className="tagcloud"></span>
       </div>
