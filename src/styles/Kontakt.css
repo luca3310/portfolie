@@ -8,11 +8,6 @@
   padding-bottom: 15rem;
 }
 
-.kontakt {
-  opacity: 0;
-  transition: 1s;
-}
-
 .kontaktSection form {
   display: flex;
   flex-direction: column;

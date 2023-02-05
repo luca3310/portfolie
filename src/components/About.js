@@ -1,8 +1,7 @@
 import "../styles/About.css";
-import React, { useEffect } from "react";
-import TagCloud from "TagCloud";
 import Card from "./Card";
 import { useInView } from "react-intersection-observer";
+import TextShpere from "./TextShpere";
 
 const About = () => {
   const { ref: myRef, inView: myElementIsVisible } = useInView({
@@ -11,38 +10,14 @@ const About = () => {
   const { ref: myRef2, inView: myElementIsVisible2 } = useInView({
     threshold: 0.5,
   });
-  useEffect(() => {
-    return () => {
-      const container = ".tagcloud";
-      const texts = [
-        "HTML",
-        "CSS",
-        "Tailwind",
-        "JavaScript",
-        "React",
-        "ES6",
-        "GIT",
-        "Github",
-      ];
-
-      const options = {
-        radius: 300,
-        maxSpeed: "normal",
-        initSpeed: "normal",
-        keep: true,
-      };
-
-      TagCloud(container, texts, options);
-    };
-  }, []);
+  const { ref: myRef3, inView: myElementIsVisible3 } = useInView({
+    threshold: 0.5,
+  });
 
   return (
     <section id="aboutSection" className="aboutSection">
-      <div
-        ref={myRef}
-        className={`aboutContainer ${myElementIsVisible ? "show" : ""}`}
-      >
-        <div className="col">
+      <div className={`aboutContainer`}>
+        <div ref={myRef} className={`col ${myElementIsVisible ? "show" : ""}`}>
           <h1>Omkring</h1>
           <img className="image" src="images/image.jpg" alt="selfimage" />
           <p>
@@ -50,10 +25,11 @@ const About = () => {
             selvlært Front-end Udvikler. UX og UI designer.
           </p>
         </div>
-        <div className="text-shpere">
-          <span className="tagcloud"></span>
-        </div>
-        <div className="col fokuspunkter">
+        <TextShpere />
+        <div
+          ref={myRef3}
+          className={`col fokuspunkter ${myElementIsVisible3 ? "show" : ""}`}
+        >
           <h1>Evner</h1>
           <ul>
             <li>HTML</li>
