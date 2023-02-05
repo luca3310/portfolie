@@ -19,7 +19,7 @@ function Project(prompt) {
           </ul>
           <p>
             {prompt.tekst}{" "}
-            <a target="_blank" href={prompt.link}>
+            <a rel="noreferrer" target="_blank" href={prompt.link}>
               besøg her
             </a>
           </p>
