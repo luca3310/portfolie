@@ -18,7 +18,10 @@ function Project(prompt) {
             })}
           </ul>
           <p>
-            {prompt.tekst} <a href={prompt.link}>besøg her</a>
+            {prompt.tekst}{" "}
+            <a target="_blank" href={prompt.link}>
+              besøg her
+            </a>
           </p>
         </div>
       </div>
