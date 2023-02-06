@@ -81,3 +81,9 @@
   color: #802bb1;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .kontaktSection ul li {
+    font-size: 1rem;
+  }
+}
