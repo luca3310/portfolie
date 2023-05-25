@@ -12,17 +12,17 @@ const Hero = function () {
         className={`heroContainer ${myElementIsVisible ? "show" : ""}`}
       >
         <h1 className="name">
-          hej, mit navn er <span>Lucas Kragh </span>
+          Hi, my name is, <span>Lucas Kragh </span>
         </h1>
         <div className="wrapper">
-          <div className="static-txt">og jeg er en</div>
+          <div className="static-txt">and I am a</div>
           <ul className="dynamic-txts">
             <li>
-              <span>Front-end udvikler</span>
+              <span>Web developer</span>
             </li>
 
             <li>
-              <span>UX og UI Designer</span>
+              <span>UX/UI designer</span>
             </li>
           </ul>
         </div>

@@ -7,20 +7,10 @@ import Kontankt from "./components/Kontakt";
 import "./App.css";
 
 function App() {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classlist.toggle("show", entry.isIntersecting);
-      });
-    },
-    {
-      threshold: 1,
-    }
-  );
   return (
     <div className="App">
       <Navbar />
-      <Hero observer={observer} />
+      <Hero />
       <About />
       <Projects />
       <Kontankt />

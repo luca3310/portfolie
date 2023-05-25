@@ -6,32 +6,25 @@ function Projects() {
     <section id="projectsSection" className="projectsSection">
       <div className="projectsContainer">
         <Project
-          tekst="en hjemmeside der vil anbefale en aktie ved hjælp af en API"
-          titel="Aktie Hjemmeside"
-          ider={["html", "css", "JavaScript"]}
-          link="https://deluxe-youtiao-1c74e9.netlify.app"
-          billede="images/aktieHjemmeside.PNG"
+          tekst="A website made from reference of another website"
+          titel="Landing page"
+          ider={["Tailwind", "Astro"]}
+          link="https://bright-florentine-e2c19b.netlify.app/"
+          billede="images/frisørImage.PNG"
         />
         <Project
-          tekst="en hjemmeside af en kaffe cafe"
-          titel="kaffe hjemmeside"
-          ider={["react", "tailwind", "html"]}
-          billede="images/kaffeHjemmeside.PNG"
-          link="https://steady-lamington-946951.netlify.app"
+          tekst="A Nextjs website that is connected to a Firebase database with authorization."
+          titel="Chatapp"
+          ider={["NextJS", "Firebase", "Tailwind"]}
+          billede="images/chatAppImage.PNG"
+          link="https://chatapp-do688udmg-luca3310.vercel.app/"
         />
         <Project
-          tekst="en hjemmeside der lader dig skrive noter, færdiggøre dem og slette dem"
-          titel="note hjemmeside"
-          ider={["JavaScript", "css", "html"]}
-          billede="images/noteHjemmeside.PNG"
-          link="https://fancy-elf-e951fc.netlify.app"
-        />
-        <Project
-          tekst="en hjemmeside af et flyselskab"
-          titel="flyselskab hjemmeside"
-          ider={["react", "tailwind", "html"]}
-          billede="images/rejseHjemmeside.PNG"
-          link="https://playful-liger-dc705c.netlify.app"
+          tekst="A website that receives data from a weather API."
+          titel="Weather data"
+          ider={["JavaScript", "Css", "Html"]}
+          billede="images/APIImage.png"
+          link="https://chimerical-melba-232a87.netlify.app/"
         />
       </div>
     </section>

@@ -13,8 +13,12 @@
   height: 400px;
 }
 
-.project:hover .details p {
-  display: block;
+.project:hover .hover-tekst {
+  display: flex;
+}
+
+.project:hover .details h1 {
+  display: none;
 }
 
 .details a:hover {
@@ -37,7 +41,7 @@
 .project:hover .imgbx {
   width: 250px;
   height: 250px;
-  border-top: purple solid 10px;
+  border-top: #802bb1 solid 10px;
 }
 
 .imgbx img {
@@ -68,9 +72,13 @@
   font-size: 1.5rem;
 }
 
-.details p {
+.hover-tekst {
   display: none;
   padding: 0 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .details ul {
@@ -86,7 +94,7 @@
 }
 
 .details a {
-  color: purple;
+  color: #802bb1;
   cursor: pointer;
   text-decoration: none;
 }

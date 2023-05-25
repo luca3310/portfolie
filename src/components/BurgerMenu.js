@@ -33,7 +33,7 @@ function BurgerMenu() {
         <ul>
           <li>
             <a onClick={() => setOpen(!Open)} href="#heroSection">
-              Hero
+              Top
             </a>
           </li>
           <li>

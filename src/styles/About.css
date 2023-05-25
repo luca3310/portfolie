@@ -1,11 +1,10 @@
 .aboutSection {
-  min-height: 100vh;
+  padding: 10rem;
   background: #343f4f;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 200px;
 }
 
 .aboutContainer {
@@ -13,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 5rem;
 }
 
 .image {
@@ -28,13 +28,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 30%;
-  gap: 50px;
+  max-width: 30vw;
+  gap: 2rem;
   background-color: #29303b;
-  padding: 50px;
+  padding: 3rem;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 20px;
   opacity: 0;
   transition: 2s;
 }
@@ -48,8 +47,6 @@ p {
   text-align: center;
   font-size: 1rem;
 }
-
-
 
 .fokuspunkter {
   display: none;
@@ -74,7 +71,7 @@ p {
     flex-direction: column;
   }
   .col {
-    max-width: 80%;
+    max-width: 80vw;
   }
 
   .image {
@@ -85,7 +82,6 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  
   .fokuspunkter {
     display: flex;
   }

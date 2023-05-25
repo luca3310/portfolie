@@ -2,7 +2,7 @@ import "../styles/Project.css";
 import { useInView } from "react-intersection-observer";
 function Project(prompt) {
   const { ref: myRef, inView: myElementIsVisible } = useInView({
-    threshold: 1,
+    threshold: 0.8,
   });
   return (
     <div ref={myRef} className={`project ${myElementIsVisible ? "show" : ""}`}>
@@ -17,12 +17,12 @@ function Project(prompt) {
               return <li key={index}>{ider}</li>;
             })}
           </ul>
-          <p>
-            {prompt.tekst}{" "}
+          <div className="hover-tekst">
+            <p>{prompt.tekst}</p>
             <a rel="noreferrer" target="_blank" href={prompt.link}>
-              besøg her
+              Visit here
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </div>

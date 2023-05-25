@@ -1,6 +1,4 @@
 .card {
-  /* ... */
-  color: white;
   border-radius: 16px;
   background: #29303b;
   box-shadow: -1rem 0 3rem #000;
@@ -27,13 +25,12 @@
   margin: 3rem 0 0;
 }
 
-.author-avatar img {
+.author-avatar svg {
   display: block;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  filter: grayscale(100%);
   margin: 16px 10px;
+  color: #d1d7e0;
 }
 
 .half-circle {

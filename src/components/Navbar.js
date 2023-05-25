@@ -6,7 +6,7 @@ const Navbar = function () {
     <div className="navbar">
       <ul className="navbarDesktop">
         <li>
-          <a href="#heroSection">Hero</a>
+          <a href="#heroSection">Top</a>
         </li>
         <li>
           <a href="#aboutSection">About</a>

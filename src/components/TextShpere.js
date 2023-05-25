@@ -15,11 +15,13 @@ const TextShpere = () => {
     const texts = [
       "HTML",
       "CSS",
-      "JavaScript",
       "React",
       "ES6",
       "GIT",
-      "GITHUB",
+      "Vite",
+      "Astro",
+      "Nextjs",
+      "Firebase",
     ];
 
     const options = {
