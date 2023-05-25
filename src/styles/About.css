@@ -64,6 +64,7 @@ p {
 .card-list {
   opacity: 0;
   transition: 2s;
+  margin-top: 5rem;
 }
 
 @media (max-width: 1100px) {
