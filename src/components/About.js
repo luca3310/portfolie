@@ -37,6 +37,7 @@ const About = () => {
             <li>Tailwind</li>
             <li>React</li>
             <li>GIT</li>
+            <li>ES6</li>
             <li>Nextjs</li>
             <li>Firebase</li>
             <li>Astro</li>

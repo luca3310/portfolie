@@ -22,6 +22,7 @@ const TextShpere = () => {
       "Astro",
       "Nextjs",
       "Firebase",
+      "Tailwind",
     ];
 
     const options = {
